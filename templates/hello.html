@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Hello!</title>
+	</head>
+	<body>
+		<h1>
+			Hello {{ name | em }}!
+		</h1>
+		<a href="{{ url_for('hello') }}">
+			Go  back home
+		</a>
+		<br>
+		<br>
+		<br>
+		<img src="{{ url_for('static', filename='dog.jpg') }}">
+	</body>
+</html>
